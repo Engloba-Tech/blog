@@ -27,7 +27,7 @@ Asegúrate que la versión del assembly que quieres depurar es la misma que tien
 
 Para conectar Visual Studio a AppService
 
-![Debug AppService From Visual Studio](/images/Debug-AppService.PNG 'Debug AppService From Visual Studio')
+![Debug AppService From Visual Studio](images/Debug-AppService.PNG 'Debug AppService From Visual Studio')
 
 Esto llevará su ratito... una vez visual studio se conecta al App Service te abre la web en cuestión en el browser... a partir de ahí ya puedes poner breakpoints y depurar lo que necesites. Por cierto si has leído este post te recomiendo leer un post al que llegué por twitter en el que se profundiza más en kudu y estas movidas.
 
