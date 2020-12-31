@@ -10,6 +10,6 @@
 &lt;h3 id="conectar-visual-studio-a-appservice">Conectar Visual Studio a AppService&lt;/h3>
 &lt;p>Asegúrate que la versión del assembly que quieres depurar es la misma que tienes en local, por ejemplo si el entorno que vas a depurar tiene CD y está vinculado a master pues con situarte en master te valdría.&lt;/p>
 &lt;p>Para conectar Visual Studio a AppService&lt;/p>
-&lt;p>&lt;img src="https://engloba-tech.github.io/blog/public/posts/images/Debug-AppService.PNG" alt="Debug AppService From Visual Studio" title="Debug AppService From Visual Studio">&lt;/p>
+&lt;p>&lt;img src="../../images/Debug-AppService.PNG" alt="Debug AppService From Visual Studio" title="Debug AppService From Visual Studio">&lt;/p>
 &lt;p>Esto llevará su ratito&amp;hellip; una vez visual studio se conecta al App Service te abre la web en cuestión en el browser&amp;hellip; a partir de ahí ya puedes poner breakpoints y depurar lo que necesites. Por cierto si has leído este post te recomiendo leer un post al que llegué por twitter en el que se profundiza más en kudu y estas movidas.&lt;/p>
 &lt;p>Hasta aquí este post, es muy básico pero me ha servido para vencer finalmente la procastinación y retomar lo de escribir en blogs que ya hace un par de años que no lo hacía y se echa de menos!!&lt;/p></description></item></channel></rss>
