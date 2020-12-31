@@ -17,7 +17,7 @@ Hay varios modos de comprobarlo, la más fácil y cutre es conectando el debugge
 
 Ahora en serio, tienes modos de examinar el contenido de tu App Service y comprobar si para cada assembly que necesitas depurar está su correspondiente .pdb. Desde el portal mismo, si entras al App Service y te fijas en la sección Development Tools.
 
-![App Service Development Tools](/images/AppService-Development-Tools.PNG 'App Service Development Tools')
+![App Service Development Tools](../../images/AppService-Development-Tools.PNG 'App Service Development Tools')
 
 Está por un lado Advanced Tools también conocido como [Kudu](https://github.com/projectkudu/kudu "Project's Kudu Github Repository") (tiene api 💓) y por otro lado App Service Editor también conocido como Monaco... Usa el que quieras para listar el contenido del directorio wwwRoot que es donde están los assemblies de tu aplicación. Si usas Kudu lo tendrás que hacer desde la opción "Debug Console" y ahí te puedes mover hasta el directorio.. De echo si te quedas un rato en el portal de Kudu verás que si no lo conocías todavía es oro... tienes registros, profilings. De echo para "resolver misterios" en App Service son más útil estas herramientas que no lo que estoy contando originalmente en el post 😆
 
