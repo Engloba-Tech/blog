@@ -5,11 +5,11 @@ draft: false
 tags: ['Carlos Cañizares', 'C#', 'Azure', 'Serilog']
 ---
 
-La monitorización es un aspecto importante de nuestras aplicaciones :bowtie:. Si tienes la insfraestructura en Azure lo más típico sería usar Application Insights / Azure Monitor como "recolector/servicio" de métricas e incluso visor (para visualizar métricas al final del post mencionaré algunas alternativas).
+La monitorización es un aspecto importante de nuestras aplicaciones 📈. Si tienes la insfraestructura en Azure lo más típico sería usar Application Insights / Azure Monitor como "recolector/servicio" de métricas e incluso visor (para visualizar métricas al final del post mencionaré algunas alternativas).
 
 Si usas app services de Azure, tener un site monitorizado en Azure Monitor es cuestión de minutos... lo puedes hacer desde el portal, pulsando añadir application insights y configurando el setting de la instrumentation key. Esto ya hará que puedas consumir ese resource App Insights que has creado para recolectar métricas del site y ver métricas interesantes como número de peticiones, ver agregados de peticiones por códigos de respuesta, tiempo medio respuesta, etc... Ok, pero que pasa si quiero analizar porque se ha producido un 500 o hacer seguimiento de un hilo de peticiones más complejo. Si no configuramos "algo más" en la api vamos un poco a ciegas cuando queremos ver más en detalle.
 
-.Net como framework incorpora su api para logging https://docs.microsoft.com/es-es/aspnet/core/fundamentals/logging/?view=aspnetcore-5.0 aunque solemos configurar algún paquete que nos ayude con la gestión de todo esto en nuestras aplicaciones. Tienes varias opciones como Log4Net, Nlog (...). En nuestro caso usaremos Serilog.
+.Net como framework incorpora su api para [logging](https://docs.microsoft.com/es-es/aspnet/core/fundamentals/logging/?view=aspnetcore-5.0) aunque solemos configurar algún paquete que nos ayude con la gestión de todo esto en nuestras aplicaciones. Tienes varias opciones como Log4Net, Nlog (...). En nuestro caso usaremos Serilog.
 
 ### Como configurar Serilog en Asp.Net 3.1
 

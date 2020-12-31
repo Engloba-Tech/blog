@@ -29,7 +29,7 @@ En App Center lo montamos un poco diferente a como solemos hacerlo en web, tenem
 
 Te preguntarás como gestionamos la transformación de settings entre un entorno u otro. Lo hacemos jugando con esta secciónd de la build y luego leyendo ese fichero .env desde React Native.
 
-![Managing env variables in App Center build](/img/AppCenter-Build-Env-Variables.PNG 'Managing env variables in App Center build')
+![Managing env variables in App Center build](/images/AppCenter-Build-Env-Variables.PNG 'Managing env variables in App Center build')
 
 Y en master tenemos configurada la build que va a las stores donde metemos los valores de producción en los settings de entorno. De este modo al hacer una PR y aprobarla de rama "x" a master hará que se lance el proceso de publicación a las correspondientes stores.
 
@@ -45,19 +45,19 @@ Una vez ya tienes la primera subida detallo los pasos necesarios para automatiza
 
 Necesitas una developer account, una vez dentro has de crear una cuenta de servicio que pueda acceder a la api. Lo haremos siguiendo los pasos que ves en las capturas.
 
-![Create service account in Google Play Api](/img/GooglePlay-Api-Access.PNG 'Create service account in Google Play Api')
+![Create service account in Google Play Api](/images/GooglePlay-Api-Access.PNG 'Create service account in Google Play Api')
 
 Una vez pulsas en Crear Cuenta de Servicio te dirige a la página de Google Cloud Platform donde puedes crear cuentas de servicio y vincular "keys" (p12 o json).
 
-![Creating Api Key and Downloading Json](/img/Create-Service-Account-Json-Key.PNG 'Creating Api Key and Downloading Json')
+![Creating Api Key and Downloading Json](/images/Create-Service-Account-Json-Key.PNG 'Creating Api Key and Downloading Json')
 
 Descargamos la clave y nos vamos a App Center, vamos a distribute y configuramos el acceso a Google Play subiendo la clave que hemos descargado.
 
-![Creating Api Key and Downloading Json](/img/Create-Service-Account-Json-Key.PNG 'Creating Api Key and Downloading Json')
+![Creating Api Key and Downloading Json](/images/Create-Service-Account-Json-Key.PNG 'Creating Api Key and Downloading Json')
 
 Una vez tenemos la store vinculada ya podemos seleccionarla en nuestra build Android/Master.
 
-![Select Distribute To Store in Distribution Section](/img/Distribute-Store-AppCenter.PNG 'Select Distribute To Store in Distribution Section')
+![Select Distribute To Store in Distribution Section](/images/Distribute-Store-AppCenter.PNG 'Select Distribute To Store in Distribution Section')
 
 Con esto ya tendríamos automatizada la publicación para Google Play de modo que un commit en master de la app lanza el proceso.
 
@@ -70,6 +70,6 @@ Te pedirá tus credenciales del Apple ID con el que tienes cuenta en Apple devel
 Ahora tendrías que hacer exactamente lo mismo que hemos hecho para Android, ir a la build de master y en la sección Distribute seleccionar Store y Production.
 
 También podrías distribuir una release existente de modo manual. Si te vas a la release una vez has configurado la store, te sale como una opción más de distribución.
-![Manually distributing a existing release to Apple Store](/img/Distribute-Apple-Store-AppCenter.PNG 'Manually distributing a existing release to Apple Store')
+![Manually distributing a existing release to Apple Store](/images/Distribute-Apple-Store-AppCenter.PNG 'Manually distributing a existing release to Apple Store')
 
 Con esto ya tendríamos automatizada la publicación en las tiendas!
