@@ -1,13 +1,14 @@
 ---
 title: 'Configurando Serilog contra Application Insights en nuestra aplicación web Asp.Net'
 date: 2020-12-30T08:40:44+01:00
-draft: false
+draft: true
 tags: ['Carlos Cañizares', 'C#', 'Azure', 'Serilog']
+featureImage: '../../images/Serilog-AzureMonitor-AppInsights.png'
 ---
 
-La monitorización es un aspecto importante de nuestras aplicaciones 📈. Si tienes la insfraestructura en Azure lo más típico sería usar Application Insights / Azure Monitor como "recolector/servicio" de métricas e incluso visor (para visualizar métricas al final del post mencionaré algunas alternativas).
+La monitorización es un aspecto importante de nuestras aplicaciones 📈. Si tienes la insfraestructura en Azure lo más típico sería usar Application Insights / Azure Monitor como saas de métricas y usar el portal de Azure Monitor como visor.
 
-Si usas app services de Azure, tener un site monitorizado en Azure Monitor es cuestión de minutos... lo puedes hacer desde el portal, pulsando añadir application insights y configurando el setting de la instrumentation key. Esto ya hará que puedas consumir ese resource App Insights que has creado para recolectar métricas del site y ver métricas interesantes como número de peticiones, ver agregados de peticiones por códigos de respuesta, tiempo medio respuesta, etc... Ok, pero que pasa si quiero analizar porque se ha producido un 500 o hacer seguimiento de un hilo de peticiones más complejo. Si no configuramos "algo más" en la api vamos un poco a ciegas cuando queremos ver más en detalle.
+Si usas App Services de Azure, tener un site monitorizado en Azure Monitor es cuestión de minutos... lo puedes hacer desde el portal, pulsando añadir Application Insights y configurando el setting de la instrumentation key. Esto ya hará que puedas consumir ese resource App Insights que has creado para recolectar métricas del site y ver métricas interesantes como número de peticiones, ver agregados de peticiones por códigos de respuesta, tiempo medio respuesta, etc... Ok, pero ¿qué pasa si quiero analizar porqué se ha lanzado un 500 o hacer seguimiento de un hilo de peticiones más complejo?. Si no configuramos "algo más" en la api, vamos un poco a ciegas cuando queremos ver más en detalle.
 
 .Net como framework incorpora su api para [logging](https://docs.microsoft.com/es-es/aspnet/core/fundamentals/logging/?view=aspnetcore-5.0) aunque solemos configurar algún paquete que nos ayude con la gestión de todo esto en nuestras aplicaciones. Tienes varias opciones como Log4Net, Nlog (...). En nuestro caso usaremos Serilog.
 
@@ -35,7 +36,7 @@ Para usar Serilog contra AppInsights necesitaremos estos 3 paquetes:
   <PackageReference Include="Serilog.Sinks.ApplicationInsights" Version="3.1.0" />
 ```
 
-Ahora el siguiente paso sería configurar serilog en el arranque de nuestra aplicación asp.net normalmente en la clase Program.cs. Nos interesa configurar aquí ya Serilog porque normalmente en nuestras apis solemos tener un seed básico de datos y de este modo registraríamos si se podruciese algún fallo en este proceso.
+Ahora el siguiente paso sería configurar serilog en el arranque de nuestra aplicación Asp.Net normalmente en la clase Program.cs. Nos interesa configurar aquí ya Serilog porque normalmente en nuestras apis solemos tener un seed básico de datos y de este modo registraríamos si se podruciese algún fallo en este proceso.
 
 Nuestro código pinta así, lo importante es como nos traemos el logger de la configuración de la api y como luego le decimos que "escriba" los registros en App Insights.
 
