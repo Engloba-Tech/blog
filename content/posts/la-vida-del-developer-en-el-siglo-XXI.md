@@ -6,7 +6,7 @@ tags: ['Carlos Cañizares', 'Agile', 'Cultura dev']
 featureImage: '../../images/Developer-Tunel.jpg'
 ---
 
-Este post viene a ser de los no técnicos, aquellos que se pueden escribir con una copa de vino o cerveza al lado. Hablo del sector tecnológico desde el punto de vista de un perfil técnico (de mi quinta entre 35 y 40) en los tiempos que corren. Vendría a ser un keep coding II escrito por la misma persona tras varios años.
+Este post viene a ser de los no técnicos, aquellos que se pueden escribir con una copa de vino o cerveza al lado. Hablo del sector tecnológico desde el punto de vista de un perfil técnico (de mi quinta entre 35 y 40) en los tiempos que corren. Vendría a ser un [keep coding II](https://ccanizares.github.io/KeepCoding/keep-coding/) escrito por la misma persona tras varios años.
 
 En general, el sector de la tecnología es un sector privilegiado en estos tiempos. Todos los roles van buscados. El perfil técnico que tiene linkedin actualizado le llueven ofertas cada semana. Esto por desgracia no pasa en la mayoría de sectores. Esta demanda de perfiles técnicos y la dificultad de las empresas para encontrarlos, hace que si eres técnico seguramente estés viviendo un buen momento. En cambio si como empresa (consultora o final) quieres formar un equipo, seguramente tengas dificultades para captar talento técnico. Lo puedes comprobar si como empresa cuelgas una oferta en algún portal en plan se busca full stack, no se apuntará nadie a no ser que seas Amazon, Google, Spotify, Twitter o empresas con un cierto nombre o que estén de moda entre developers (no tienen porque ser grandes multinacionales). Y es más si se apunta algún developer sospecha de el 😉.
 
