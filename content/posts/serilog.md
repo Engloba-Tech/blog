@@ -1,7 +1,7 @@
 ---
 title: 'Configurando Serilog contra Application Insights en nuestra aplicación web Asp.Net'
-date: 2020-12-30T08:40:44+01:00
-draft: true
+date: 2021-02-24T08:40:44+01:00
+draft: false
 tags: ['Carlos Cañizares', 'C#', 'Azure', 'Serilog']
 featureImage: '../../images/Serilog-AzureMonitor-AppInsights.png'
 ---
