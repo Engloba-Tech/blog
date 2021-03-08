@@ -1,7 +1,7 @@
 ---
 title: 'Configurando CD para mi aplicación React Native a Google Play y Apple Store con App Center'
-date: 2020-12-30T08:40:44+01:00
-draft: true
+date: 2021-03-08T08:40:44+01:00
+draft: false
 tags:
   [
     'Carlos Cañizares',
