@@ -1,7 +1,7 @@
 ---
 title: 'Migrando una Api de dotnet 3.1.x a 5.0.x'
-date: 2021-02-24T11:10:44+01:00
-draft: true
+date: 2021-03-15T08:10:44+01:00
+draft: false
 tags: ['Carlos Cañizares', 'C#', 'DotNet']
 featureImage: '../../images/Migrating-From-DotNet3.1-To-DotNet5.0.PNG'
 ---
@@ -18,6 +18,8 @@ Una vez actualizados los proyectos que componen la solución, actualizaremos tam
 Y... bien, compila a la primera y desde swagger un GET me devuelve datos del seed. El siguiente paso es correr los test y... bien pasan a la primera.
 
 ![Running integration tests in Net 5.0](../../images/Running-integration-tests-in-Net-5.0.PNG 'Running integration tests in Net 5.0')
+
+A nivel visual studio no tendrás problemas para trabajar con net 5.0 siempre y cuando estés por encima de la versión 16.8.\*.
 
 Por último, quedará ver si es necesario cambiar algo en las pipelines. Usamos un agente própio que es un ubuntu VM en Azure, intuyo que nos tocará conectarnos al agente e instalar el SDK 5.0 como hemos hecho en nuestra máquina local. Una vez hecho funcionan las pipes sin problema, en principio el agente intentará construir las aplicaciones usando el último SDK instalado... es decir intentará compilar con el SDK de 5.0 todas nuestras aplicaciones .NET. En principio debería ser capaz de compilar también 3.1, en nuestro caso siguen funcionando todas las pipes sin problema pero podría darse el caso que necesites compilar una aplicación con un SDK concreto.. en ese caso deberíamos usar el fichero global.json, aunque ya digo que en nuestro caso conviven 5.0/3.1 sin problema y sin necesidad de añadir ficheros global.json.
 
